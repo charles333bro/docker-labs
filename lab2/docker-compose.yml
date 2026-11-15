@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      # Пробрасываем порт 5000 хоста на 5000 контейнера
+      - "5000:5000"
+    container_name: lab2-api
